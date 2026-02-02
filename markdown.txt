@@ -1,0 +1,52 @@
+MARKDOWN CHEAT SHEET - ERWEITERTE VERSION
+============================================================================
+
+TEXT & ÜBERSCHRIFTEN
+----------------------------------------------------------------------------
+**Fett** Fetter Text
+*Kursiv* Kursiver Text (oder _Kursiv_)
+~~Durchgestrichen~~    Durchgestrichener Text
+# H1 bis ###### H6     Überschriften (Anzahl der # bestimmt die Ebene)
+
+LISTEN & CHECKLISTEN
+----------------------------------------------------------------------------
+- Punkt                Ungeordnete Liste (Bullet Point mit -, * oder +)
+  - Unterpunkt         Einrückung (Tab oder 2-4 Leerzeichen)
+1. Punkt               Nummerierte Liste
+- [ ] Offen            Checkbox (Task List): Eckige Klammer + Leerzeichen
+- [x] Erledigt         Abgehakte Checkbox: Eckige Klammer + x
+
+TABELLEN SYNTAX
+----------------------------------------------------------------------------
+| Kopf A | Kopf B |    Spalten werden mit Pipes "|" getrennt
+| ------ | ------ |    Trennlinie definiert Spalten (mind. 3 Bindestriche)
+| Zelle1 | Zelle2 |    Inhalt der Tabelle
+
+Ausrichtung in der Trennlinie definieren:
+| :--- | :--: | ---: |   Linksbuendig | Zentriert | Rechtsbuendig
+
+LINKS & BILDER
+----------------------------------------------------------------------------
+[Text](URL)            Link (z.B. [Google](https://google.com))
+[Text](URL "Titel")    Link mit Mouseover-Titel
+![Alt](Bild-URL)       Bild einfügen
+<URL>                  Automatische Verlinkung einer URL
+
+CODE & ZITATE
+----------------------------------------------------------------------------
+`Code`                 Inline Code (Backticks)
+
+```js                  Code Block Start (opt. Sprache wie js, python, css)
+Code Zeile             Code Inhalt
+```                    Code Block Ende
+
+> Zitat                Blockzitat (verschachtelbar mit >>)
+
+SPEZIAL & SONSTIGES
+----------------------------------------------------------------------------
+---                    Horizontale Linie (mind. 3 Bindestriche)
+Fußnote[^1]            Fußnoten-Verweis im Text
+[^1]: Erklärung        Fußnoten-Inhalt (meist am Dokumentende)
+HTML-Kommentar (im Output nicht sichtbar)
+\Zeichen               Escape-Zeichen (z.B. \* um einen Stern anzuzeigen)
+<br>                   Erzwingt Zeilenumbruch

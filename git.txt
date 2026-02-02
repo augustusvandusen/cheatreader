@@ -1,0 +1,45 @@
+==========================================================================
+                      GIT CHEATSHEET - BASIS-BEFEHLE
+==========================================================================
+
+1. SETUP & INITIALISIERUNG
+--------------------------------------------------------------------------
+git init                  | Erstellt ein neues lokales Git-Repository
+git clone <url>           | Kopiert ein entferntes Repository (Remote)
+git config --global user.name "Name"  | Setzt den Benutzernamen
+git config --global user.email "mail" | Setzt die E-Mail-Adresse
+
+2. ÄNDERUNGEN VERWALTEN (WORKFLOW)
+--------------------------------------------------------------------------
+git status                | Zeigt den Status der Dateien (untracked, changed)
+git add <datei>           | Fügt eine Datei zum Staging-Bereich hinzu
+git add .                 | Fügt ALLE Änderungen zum Staging-Bereich hinzu
+git commit -m "Nachricht" | Speichert den Stand des Staging-Bereichs (lokal)
+git diff                  | Zeigt Unterschiede in den Dateien an
+
+3. REPOSITORY-VERLAUF
+--------------------------------------------------------------------------
+git log                   | Zeigt die Commit-Historie an
+git log --oneline         | Kompakte Ansicht der Historie
+git show <commit-hash>    | Zeigt Details zu einem spezifischen Commit
+
+4. BRANCHING & MERGING
+--------------------------------------------------------------------------
+git branch                | Listet alle lokalen Branches auf
+git branch <name>         | Erstellt einen neuen Branch
+git switch <name>         | Wechselt zu einem anderen Branch
+git merge <name>          | Führt Branch <name> in den aktuellen Branch zusammen
+git branch -d <name>      | Löscht einen lokalen Branch
+
+5. REMOTE REPOSITORIES (SYNCHRONISATION)
+--------------------------------------------------------------------------
+git remote add origin <url> | Verknüpft lokales Repo mit einem Remote-Server
+git push origin <branch>    | Sendet lokale Commits zum Remote-Server
+git pull                    | Holt Änderungen vom Server und führt sie zusammen
+git fetch                   | Holt Änderungen vom Server (ohne zu mergen)
+
+==========================================================================
+VISUALISIERUNG DES WORKFLOWS:
+Working Dir  --->  Staging Area  --->  Local Repo  --->  Remote Repo
+      (add)            (commit)            (push)
+==========================================================================
