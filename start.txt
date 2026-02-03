@@ -1,0 +1,6 @@
+Welcome to CheatReader 1.0!
+
+This is your default starting page.
+Select one of the cheat sheets from the file list on the right to view its content.
+You can use the [+] and [-] buttons to adjust the font size for comfortable reading.
+Place any additional *.txt files in the application directory
